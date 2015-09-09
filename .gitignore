@@ -26,3 +26,7 @@
 *.exe
 *.out
 *.app
+
+# Xcode files
+*.xcworkspace
+xcuserdata
