@@ -1,6 +1,6 @@
 #include "Database.h"
 
-#include "sqlite/sqlite3.h"
+#include "sqlite3.h"
 
 namespace sqlw
 {

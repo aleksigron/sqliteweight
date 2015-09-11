@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		458C46FB1BA0D4DD004160C7 /* Database.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 458C46F91BA0D4DD004160C7 /* Database.cpp */; };
+		45F1BD221BA3321D00EF515F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45F1BD211BA3321D00EF515F /* main.cpp */; };
+		45F1BD251BA3323F00EF515F /* Statement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45F1BD231BA3323F00EF515F /* Statement.cpp */; };
+		45F1BD291BA332BB00EF515F /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 45F1BD271BA332BB00EF515F /* sqlite3.c */; };
+		45F1BD2C1BA38E9D00EF515F /* ResultSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45F1BD2A1BA38E9D00EF515F /* ResultSet.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +30,13 @@
 		456C5C831BA0D3DB0050E8D8 /* sqliteweight-example */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "sqliteweight-example"; sourceTree = BUILT_PRODUCTS_DIR; };
 		458C46F91BA0D4DD004160C7 /* Database.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Database.cpp; path = ../../source/sqlw/Database.cpp; sourceTree = "<group>"; };
 		458C46FA1BA0D4DD004160C7 /* Database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Database.h; path = ../../source/sqlw/Database.h; sourceTree = "<group>"; };
+		45F1BD211BA3321D00EF515F /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../source/main.cpp; sourceTree = "<group>"; };
+		45F1BD231BA3323F00EF515F /* Statement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Statement.cpp; path = ../../source/sqlw/Statement.cpp; sourceTree = "<group>"; };
+		45F1BD241BA3323F00EF515F /* Statement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Statement.h; path = ../../source/sqlw/Statement.h; sourceTree = "<group>"; };
+		45F1BD271BA332BB00EF515F /* sqlite3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sqlite3.c; path = ../../sqlite/sqlite3.c; sourceTree = "<group>"; };
+		45F1BD281BA332BB00EF515F /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sqlite3.h; path = ../../sqlite/sqlite3.h; sourceTree = "<group>"; };
+		45F1BD2A1BA38E9D00EF515F /* ResultSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ResultSet.cpp; path = ../../source/sqlw/ResultSet.cpp; sourceTree = "<group>"; };
+		45F1BD2B1BA38E9D00EF515F /* ResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResultSet.h; path = ../../source/sqlw/ResultSet.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				458C46F81BA0D47C004160C7 /* sqliteweight */,
+				45F1BD261BA332A300EF515F /* sqlite */,
 				458C46F51BA0D442004160C7 /* example */,
 				456C5C841BA0D3DB0050E8D8 /* Products */,
 			);
@@ -59,6 +71,7 @@
 		458C46F51BA0D442004160C7 /* example */ = {
 			isa = PBXGroup;
 			children = (
+				45F1BD211BA3321D00EF515F /* main.cpp */,
 			);
 			name = example;
 			sourceTree = "<group>";
@@ -66,10 +79,23 @@
 		458C46F81BA0D47C004160C7 /* sqliteweight */ = {
 			isa = PBXGroup;
 			children = (
+				45F1BD2A1BA38E9D00EF515F /* ResultSet.cpp */,
+				45F1BD2B1BA38E9D00EF515F /* ResultSet.h */,
+				45F1BD231BA3323F00EF515F /* Statement.cpp */,
+				45F1BD241BA3323F00EF515F /* Statement.h */,
 				458C46F91BA0D4DD004160C7 /* Database.cpp */,
 				458C46FA1BA0D4DD004160C7 /* Database.h */,
 			);
 			name = sqliteweight;
+			sourceTree = "<group>";
+		};
+		45F1BD261BA332A300EF515F /* sqlite */ = {
+			isa = PBXGroup;
+			children = (
+				45F1BD271BA332BB00EF515F /* sqlite3.c */,
+				45F1BD281BA332BB00EF515F /* sqlite3.h */,
+			);
+			name = sqlite;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,7 +154,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45F1BD251BA3323F00EF515F /* Statement.cpp in Sources */,
+				45F1BD2C1BA38E9D00EF515F /* ResultSet.cpp in Sources */,
+				45F1BD221BA3321D00EF515F /* main.cpp in Sources */,
 				458C46FB1BA0D4DD004160C7 /* Database.cpp in Sources */,
+				45F1BD291BA332BB00EF515F /* sqlite3.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
