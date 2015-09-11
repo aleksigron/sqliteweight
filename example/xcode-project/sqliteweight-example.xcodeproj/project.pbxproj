@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		458C46F71BA0D44E004160C7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 458C46F61BA0D44E004160C7 /* main.cpp */; };
 		458C46FB1BA0D4DD004160C7 /* Database.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 458C46F91BA0D4DD004160C7 /* Database.cpp */; };
 /* End PBXBuildFile section */
 
@@ -24,8 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		456C5C831BA0D3DB0050E8D8 /* sqliteweight-test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "sqliteweight-test"; sourceTree = BUILT_PRODUCTS_DIR; };
-		458C46F61BA0D44E004160C7 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = source/main.cpp; sourceTree = "<group>"; };
+		456C5C831BA0D3DB0050E8D8 /* sqliteweight-example */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "sqliteweight-example"; sourceTree = BUILT_PRODUCTS_DIR; };
 		458C46F91BA0D4DD004160C7 /* Database.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Database.cpp; path = ../../source/sqlw/Database.cpp; sourceTree = "<group>"; };
 		458C46FA1BA0D4DD004160C7 /* Database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Database.h; path = ../../source/sqlw/Database.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -44,8 +42,8 @@
 		456C5C7A1BA0D3DB0050E8D8 = {
 			isa = PBXGroup;
 			children = (
-				458C46F81BA0D47C004160C7 /* source */,
-				458C46F51BA0D442004160C7 /* tests */,
+				458C46F81BA0D47C004160C7 /* sqliteweight */,
+				458C46F51BA0D442004160C7 /* example */,
 				456C5C841BA0D3DB0050E8D8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,34 +51,33 @@
 		456C5C841BA0D3DB0050E8D8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				456C5C831BA0D3DB0050E8D8 /* sqliteweight-test */,
+				456C5C831BA0D3DB0050E8D8 /* sqliteweight-example */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		458C46F51BA0D442004160C7 /* tests */ = {
+		458C46F51BA0D442004160C7 /* example */ = {
 			isa = PBXGroup;
 			children = (
-				458C46F61BA0D44E004160C7 /* main.cpp */,
 			);
-			name = tests;
+			name = example;
 			sourceTree = "<group>";
 		};
-		458C46F81BA0D47C004160C7 /* source */ = {
+		458C46F81BA0D47C004160C7 /* sqliteweight */ = {
 			isa = PBXGroup;
 			children = (
 				458C46F91BA0D4DD004160C7 /* Database.cpp */,
 				458C46FA1BA0D4DD004160C7 /* Database.h */,
 			);
-			name = source;
+			name = sqliteweight;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		456C5C821BA0D3DB0050E8D8 /* sqliteweight-test */ = {
+		456C5C821BA0D3DB0050E8D8 /* sqliteweight-example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 456C5C8A1BA0D3DB0050E8D8 /* Build configuration list for PBXNativeTarget "sqliteweight-test" */;
+			buildConfigurationList = 456C5C8A1BA0D3DB0050E8D8 /* Build configuration list for PBXNativeTarget "sqliteweight-example" */;
 			buildPhases = (
 				456C5C7F1BA0D3DB0050E8D8 /* Sources */,
 				456C5C801BA0D3DB0050E8D8 /* Frameworks */,
@@ -90,9 +87,9 @@
 			);
 			dependencies = (
 			);
-			name = "sqliteweight-test";
+			name = "sqliteweight-example";
 			productName = "sqliteweight-test";
-			productReference = 456C5C831BA0D3DB0050E8D8 /* sqliteweight-test */;
+			productReference = 456C5C831BA0D3DB0050E8D8 /* sqliteweight-example */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -109,7 +106,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 456C5C7E1BA0D3DB0050E8D8 /* Build configuration list for PBXProject "sqliteweight-test" */;
+			buildConfigurationList = 456C5C7E1BA0D3DB0050E8D8 /* Build configuration list for PBXProject "sqliteweight-example" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -121,7 +118,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				456C5C821BA0D3DB0050E8D8 /* sqliteweight-test */,
+				456C5C821BA0D3DB0050E8D8 /* sqliteweight-example */,
 			);
 		};
 /* End PBXProject section */
@@ -132,7 +129,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				458C46FB1BA0D4DD004160C7 /* Database.cpp in Sources */,
-				458C46F71BA0D44E004160C7 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,21 +215,21 @@
 		456C5C8B1BA0D3DB0050E8D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "sqliteweight-example";
 			};
 			name = Debug;
 		};
 		456C5C8C1BA0D3DB0050E8D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "sqliteweight-example";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		456C5C7E1BA0D3DB0050E8D8 /* Build configuration list for PBXProject "sqliteweight-test" */ = {
+		456C5C7E1BA0D3DB0050E8D8 /* Build configuration list for PBXProject "sqliteweight-example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				456C5C881BA0D3DB0050E8D8 /* Debug */,
@@ -242,7 +238,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		456C5C8A1BA0D3DB0050E8D8 /* Build configuration list for PBXNativeTarget "sqliteweight-test" */ = {
+		456C5C8A1BA0D3DB0050E8D8 /* Build configuration list for PBXNativeTarget "sqliteweight-example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				456C5C8B1BA0D3DB0050E8D8 /* Debug */,
